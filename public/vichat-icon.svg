@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title">
+  <title id="title">ViChat app icon</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17102f"/>
+      <stop offset="0.55" stop-color="#09051d"/>
+      <stop offset="1" stop-color="#100725"/>
+    </linearGradient>
+    <linearGradient id="vFill" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e5e4ff"/>
+    </linearGradient>
+    <linearGradient id="bubbleFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a855f7"/>
+      <stop offset="0.55" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#4f22ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.38  0 0 0 0 0.12  0 0 0 0 1  0 0 0 0.75 0" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#background)"/>
+  <path d="M111 132 Q105 132 109 141 L222 351 Q230 366 244 366 Q257 366 265 351 L375 141 Q380 132 370 132 L319 132 Q307 132 301 144 L244 259 L185 144 Q179 132 167 132 Z" fill="url(#vFill)"/>
+  <g filter="url(#glow)">
+    <path d="M354 249 C354 210 323 180 284 180 C245 180 214 210 214 249 C214 288 245 318 284 318 C294 318 304 316 313 312 L341 330 L337 300 C348 287 354 269 354 249 Z" fill="#0d0725" stroke="url(#bubbleFill)" stroke-width="13" stroke-linejoin="round"/>
+    <circle cx="257" cy="249" r="7" fill="#fff"/>
+    <circle cx="284" cy="249" r="7" fill="#fff"/>
+    <circle cx="311" cy="249" r="7" fill="#fff"/>
+  </g>
+</svg>
